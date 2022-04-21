@@ -1,0 +1,266 @@
+/* SEARCH SECTION */
+.search-center{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search{
+    width: 300px;
+    height: 45px;
+    border: 1px solid grey;
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.city{
+    width: 220px;
+    height: 25px;
+    font-size: 22px;
+    border: none;
+    font-family: 'Rokkitt', serif;
+}
+
+.city:focus{
+    outline: none;
+}
+
+form{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.submit{
+    border: none;
+    background-image: url("../assets/loupe.png");
+    color: transparent;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    background-color: transparent;
+    margin-left: 10px;
+
+}
+
+/* WEATHER SETION */
+
+.img-block{
+    display: flex;
+    justify-content: center;
+}
+
+.weather{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.main-block{
+    display: flex;
+    width: 650px;
+    height: 350px;
+    border-radius: 30px;
+    background-color: #8F98C6;
+    box-shadow: 9px 11px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+.first-block{
+    background: linear-gradient(299.82deg, #194ED7 11.82%, rgba(53, 100, 221, 0.35) 85.19%);
+    border-radius: 30px;
+    width: 275px;
+    height: 350px;
+    position: relative;
+}
+.week{
+    font-family: 'Rokkitt', serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 25px;
+    left: 28px;
+}
+
+.day{
+    font-family: 'Rokkitt', serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 28px;
+}
+
+.location{
+    font-family: 'Rokkitt', serif;
+    font-size: 21px;
+    font-weight: normal;
+    color: white;
+    position: absolute;
+    top: 95px;
+    left: 28px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.degree{
+    font-family: 'Rokkitt', serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 60px;
+    left: 28px;
+}
+
+.weather-desc{
+    font-family: 'Rokkitt', serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    left: 28px;
+}
+
+.second-block{
+    width: 350px;
+    padding-left: 25px;
+} 
+
+.main-block-xs{
+    display: none;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width:690px){
+
+    /* HEADER SECTION */
+
+    .search{
+        width: 250px;
+        height: 35px;
+    }
+
+    .city{
+        width: 185px;
+        height: 20px;
+        font-size: 18px;
+    }
+
+    .submit{
+        width: 18px;
+        height: 18px;
+    
+    }
+
+    .main-block{
+        display: none;
+    }
+
+    .main-block-xs{
+        display: block;
+        width: 320px;
+        height: 375px;
+        margin: 0 auto;
+        border-radius: 30px;
+        background-color: #8F98C6;
+    }
+
+    .first-block-xs{
+        background: linear-gradient(299.82deg, #194ED7 11.82%, rgba(53, 100, 221, 0.35) 85.19%);
+        border-radius: 30px;
+        width: 320px;
+        height: 175px;
+        position: relative;
+    }
+
+    .second-block-xs{
+        padding: 0 20px;
+    }
+
+    .weather{
+        display: block;
+    }
+
+    .week{
+        font-size: 24px;
+    }
+    
+    .day{
+        font-size: 20px;
+    }
+    
+    .location{
+        font-size: 17px;
+    }
+    
+    .degree{
+        font-size: 38px;
+        position: absolute;
+        top: -17px;
+        left: 190px
+    }
+    
+    .weather-desc{
+        font-size: 20px;
+        position: absolute;
+        bottom: 20px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .main-img{
+        width: 270px;
+        height: 270px;
+        
+    }
+
+    .desc{
+        font-size: 18px!important;
+    }
+
+    .desc-props{
+        font-size: 18px!important;
+    }
+}
+
+
+
+
+/* HELPERS */
+.d-f{
+    display: flex;
+    align-items: center;
+}
+
+.d-f-s-b{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.desc{
+    font-family: 'Rokkitt', serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.desc-props{
+    font-family: 'Rokkitt', serif;
+    font-weight: lighter;
+    font-size: 22px;
+    color: white;
+}
